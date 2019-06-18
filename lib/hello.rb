@@ -4,6 +4,15 @@
 #puts "Hello, #{ARGV.first}!, How are you?"
 
 #"Hello, World"
-name = ARGV.first || "SomeOne"
+#name = ARGV.first || "SomeOne"
 
-puts "Hello, #{name}!"
+#puts "Hello, #{name}!"
+
+
+require 'greeter'
+
+# Default is World
+name = ARGV.first || "World"
+
+greeter = Greeter.new(name)
+puts greeter.greet
